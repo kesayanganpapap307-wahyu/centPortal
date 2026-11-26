@@ -73,7 +73,16 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href="https://centpos.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold bg-emerald-500 hover:bg-emerald-400 text-white shadow-md shadow-emerald-500/30 transition-all duration-200 hover:scale-105"
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Try CentPOS</span>
+            </a>
             <a
               href="https://wa.me/6281234567890?text=Halo%20CentPortal,%20saya%20tertarik%20konsultasi%20mengenai%20solusi%20sistem%20bisnis."
               target="_blank"

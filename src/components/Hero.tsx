@@ -68,18 +68,28 @@ export default function Hero() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
               <a
-                href="#solusi"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-xl shadow-cyan-500/25 transition-all duration-200 hover:-translate-y-0.5"
+                href="https://centpos.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/30 ring-2 ring-emerald-400/50 transition-all duration-200 hover:-translate-y-0.5"
               >
-                <span>Jelajahi Solusi Kami</span>
+                <Sparkles className="w-4 h-4" />
+                <span>Try CentPOS</span>
+              </a>
+
+              <a
+                href="#solusi"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-xl shadow-cyan-500/25 transition-all duration-200 hover:-translate-y-0.5"
+              >
+                <span>Jelajahi Solusi</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
               <a
                 href="#kontak"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-sm bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition-all duration-200 hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition-all duration-200 hover:-translate-y-0.5"
               >
-                <span>Jadwalkan Demo & Diskusi</span>
+                <span>Jadwalkan Demo</span>
               </a>
             </div>
 

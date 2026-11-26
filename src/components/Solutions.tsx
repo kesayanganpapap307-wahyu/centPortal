@@ -207,11 +207,11 @@ export default function Solutions() {
                   href={current.tryUrl}
                   target={current.tryUrl.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white shadow-lg shadow-emerald-500/30 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/40 ring-2 ring-emerald-400/50 transition-all duration-200 hover:scale-105 cursor-pointer"
                 >
-                  <Play className="w-4 h-4 fill-current" />
-                  <span>{current.tryLabel || "Try"}</span>
-                  <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                  <Play className="w-4 h-4 fill-current text-white" />
+                  <span>Try ({activeTab === "pos" ? "CentPOS" : "Demo"})</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
                 </a>
 
                 <a
