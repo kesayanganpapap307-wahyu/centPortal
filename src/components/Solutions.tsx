@@ -36,7 +36,7 @@ export default function Solutions() {
       ],
       badge: "Flagship Product",
       accent: "cyan",
-      tryUrl: "https://centpos.vercel.app",
+      tryUrl: "https://centpos-git-main-wahyu-13e6.vercel.app/",
       tryLabel: "Try CentPOS"
     },
     warehouse: {
@@ -53,7 +53,7 @@ export default function Solutions() {
       ],
       badge: "Supply Chain",
       accent: "indigo",
-      tryUrl: "https://centpos.vercel.app",
+      tryUrl: "https://centpos-git-main-wahyu-13e6.vercel.app/",
       tryLabel: "Try Demo"
     },
     analytics: {
@@ -70,7 +70,7 @@ export default function Solutions() {
       ],
       badge: "Data Intelligence",
       accent: "emerald",
-      tryUrl: "https://centpos.vercel.app",
+      tryUrl: "https://centpos-git-main-wahyu-13e6.vercel.app/",
       tryLabel: "Try Analytics"
     },
     custom: {

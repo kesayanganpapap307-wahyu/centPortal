@@ -68,7 +68,7 @@ export default function Hero() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
               <a
-                href="https://centpos.vercel.app"
+                href="https://centpos-git-main-wahyu-13e6.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/30 ring-2 ring-emerald-400/50 transition-all duration-200 hover:-translate-y-0.5"
