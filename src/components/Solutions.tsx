@@ -13,7 +13,9 @@ import {
   Database, 
   ArrowUpRight,
   TrendingUp,
-  Server
+  Server,
+  Play,
+  ExternalLink
 } from "lucide-react";
 
 export default function Solutions() {
@@ -33,7 +35,9 @@ export default function Solutions() {
         "Data persistence tersimpan lokal & sinkron otomatis ke Supabase PostgreSQL"
       ],
       badge: "Flagship Product",
-      accent: "cyan"
+      accent: "cyan",
+      tryUrl: "https://centpos.vercel.app",
+      tryLabel: "Try CentPOS"
     },
     warehouse: {
       title: "CentWarehouse - Smart Inventory & Supply Chain",
@@ -48,7 +52,9 @@ export default function Solutions() {
         "Pencatatan selisih stok (stock loss / damage) dengan laporan rinci"
       ],
       badge: "Supply Chain",
-      accent: "indigo"
+      accent: "indigo",
+      tryUrl: "https://centpos.vercel.app",
+      tryLabel: "Try Demo"
     },
     analytics: {
       title: "CentAnalytics - Real-time Business Intelligence",
@@ -63,7 +69,9 @@ export default function Solutions() {
         "Notifikasi ringkasan penjualan harian langsung ke email atau WhatsApp pemilik"
       ],
       badge: "Data Intelligence",
-      accent: "emerald"
+      accent: "emerald",
+      tryUrl: "https://centpos.vercel.app",
+      tryLabel: "Try Analytics"
     },
     custom: {
       title: "Enterprise Integration & Custom API",
@@ -78,7 +86,9 @@ export default function Solutions() {
         "Pelatihan staf komprehensif dan panduan dokumentasi SOP lengkap"
       ],
       badge: "Enterprise Tailored",
-      accent: "blue"
+      accent: "blue",
+      tryUrl: "#kontak",
+      tryLabel: "Try Sandbox"
     }
   };
 
@@ -192,17 +202,29 @@ export default function Solutions() {
               </div>
 
               {/* Action */}
-              <div className="pt-4 flex flex-wrap gap-4">
+              <div className="pt-4 flex flex-wrap items-center gap-4">
+                <a
+                  href={current.tryUrl}
+                  target={current.tryUrl.startsWith("http") ? "_blank" : undefined}
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white shadow-lg shadow-emerald-500/30 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+                >
+                  <Play className="w-4 h-4 fill-current" />
+                  <span>{current.tryLabel || "Try"}</span>
+                  <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                </a>
+
                 <a
                   href="#kontak"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg shadow-cyan-500/25 transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg shadow-cyan-500/25 transition-all duration-200 hover:-translate-y-0.5"
                 >
                   <span>Minta Demo & Penawaran</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
+
                 <a
                   href="#kalkulator"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 transition-all duration-200 hover:-translate-y-0.5"
                 >
                   <span>Hitung Estimasi Kebutuhan</span>
                 </a>
