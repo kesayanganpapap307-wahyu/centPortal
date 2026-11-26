@@ -221,13 +221,6 @@ export default function Solutions() {
                   <span>Minta Demo & Penawaran</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
-
-                <a
-                  href="#kalkulator"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 transition-all duration-200 hover:-translate-y-0.5"
-                >
-                  <span>Hitung Estimasi Kebutuhan</span>
-                </a>
               </div>
             </div>
 
